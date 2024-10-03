@@ -1,0 +1,18 @@
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-family: Jockey One, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2460B0;
+    border: 6px solid #E7832C;
+    border-radius: 33px;
+}
