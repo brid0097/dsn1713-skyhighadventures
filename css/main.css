@@ -1,3 +1,7 @@
+body {
+    box-sizing: border-box;
+}
+
 .navbar {
     padding: 0;
 }
@@ -8,7 +12,6 @@
 
 .container-fluid {
     padding: 0;
-    margin-right: 11px;
     background-color: #ffffff;
 }
 
@@ -21,7 +24,7 @@
     border: none;
     border-radius: 15px;
     padding: 6px 15px;
-    margin: 0 20px 0 16px;
+    margin: 0 20px 0 18px;
 }
 
 .btn-book:hover {
@@ -32,14 +35,22 @@
     padding: 4px 14px;
 }
 
+.toggle-icon {
+    margin-right: 15px;
+}
+
 .nav-link {
     font-family: Jockey One, sans-serif;
-    font-size: 1.25em;
+    font-size: px;
     font-weight: 400;
     color: #2460B0;
 }
 
 .nav-link:hover {
+    color: #D87118;
+}
+
+.nav-link:focus {
     color: #D87118;
 }
 
@@ -54,43 +65,48 @@
     border: 3px solid #D87118;
 }
 
-/* .hamburger-menu:hover {
-    border: 3px solid #D87118;
-} */
-
-.search-btn-container {
-    padding: none;
-}
-
 .search-bar {
+    outline: none;
     border: 2px solid #D87118;
     border-radius: 15px;
     padding: 6px;
 }
 
-/* contains nav links inside toggle menu and aligns everything to the right  */
-@media (min-width: 991px) {
-    .search-btn-container {
-        order: 3;
-    }
-}
-
 /* hides need help button when search bar appears */
-@media (min-width: 990px) {
+@media (min-width: 494px) {
     .help-center {
         display: none;
     }
 }
 
-/* Hides search bar when above 493px */
-@media (max-width: 493px) {
+/* Hides search bar until 493px - after that it shows */
+@media (max-width: 499px) {
     .search-bar {
         display: none;
     }
 }
 
-@media (min-width: 482px) {
-    .help-center {
-        display: none;
+/* Width of search bar changes based on screen size */
+@media (min-width: 768px) {
+    .search-bar {
+        width: 350px;
+    }
+}
+
+@media (min-width: 992px) {
+    .search-bar {
+        width: 280px;
+    }
+}
+
+@media (min-width: 993px) {
+    .search-bar {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1430px) {
+    .search-bar {
+        width: 680px;
     }
 }
