@@ -1,7 +1,3 @@
-main {
-    margin: 0 90px
-} 
-
 .navbar {
     padding: 0;
 }
@@ -12,6 +8,8 @@ main {
 
 .container-fluid {
     padding: 0;
+    margin-right: 11px;
+    background-color: #ffffff;
 }
 
 .btn-book {
@@ -23,7 +21,7 @@ main {
     border: none;
     border-radius: 15px;
     padding: 6px 15px;
-    margin: 0 22px 0 18px;
+    margin: 0 20px 0 16px;
 }
 
 .btn-book:hover {
@@ -44,15 +42,21 @@ main {
 .nav-link:hover {
     color: #D87118;
 }
-.nav-link:focus {
-    color: #D87118;
-}
 
 .navbar-toggler {
     border: none;
     outline: none;
-    padding: 0;
+    padding:  3px 2px;
 }
+
+.navbar-toggler:focus {
+    box-shadow: none; 
+    border: 3px solid #D87118;
+}
+
+/* .hamburger-menu:hover {
+    border: 3px solid #D87118;
+} */
 
 .search-btn-container {
     padding: none;
@@ -60,7 +64,7 @@ main {
 
 .search-bar {
     border: 2px solid #D87118;
-    border-radius: 15px;;
+    border-radius: 15px;
     padding: 6px;
 }
 
@@ -71,15 +75,15 @@ main {
     }
 }
 
-/* hides need help button when in desktop view */
+/* hides need help button when search bar appears */
 @media (min-width: 990px) {
     .help-center {
         display: none;
     }
 }
 
-/* Hides search bar */
-@media (max-width: 481px) {
+/* Hides search bar when above 493px */
+@media (max-width: 493px) {
     .search-bar {
         display: none;
     }
