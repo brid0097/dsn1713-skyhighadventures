@@ -1,3 +1,6 @@
+main {
+    margin: 0 90px
+} 
 
 .navbar {
     padding: 0;
@@ -8,22 +11,27 @@
 }
 
 .container-fluid {
-    padding-left: 0;
+    padding: 0;
 }
 
-.btn {
+.btn-book {
     font-family: Jockey One, sans-serif;
     font-weight: 400;
     font-size: 1.25em;
-    font-style: normal;
-    color: #2460B0;
-    border: 6px solid #E7832C;
-    border-radius: 33px;
+    color: #ffffff;
+    background-color: #2460B0;
+    border: none;
+    border-radius: 15px;
+    padding: 6px 15px;
+    margin: 0 22px 0 18px;
 }
 
-.navbar-toggler {
-    border: none;
-    outline: none;
+.btn-book:hover {
+    color: #2460B0;
+    background-color: #ffffff;
+    border: 2px solid #2460B0;
+    border-radius: 15px;
+    padding: 4px 14px;
 }
 
 .nav-link {
@@ -34,10 +42,51 @@
 }
 
 .nav-link:hover {
-    color: #E7832C;
+    color: #D87118;
+}
+.nav-link:focus {
+    color: #D87118;
 }
 
-.icon:hover {
-    border: 4px solid #E7832C;
-    border-radius: 25px;
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.search-btn-container {
+    padding: none;
+}
+
+.search-bar {
+    border: 2px solid #D87118;
+    border-radius: 15px;;
+    padding: 6px;
+}
+
+/* contains nav links inside toggle menu and aligns everything to the right  */
+@media (min-width: 991px) {
+    .search-btn-container {
+        order: 3;
+    }
+}
+
+/* hides need help button when in desktop view */
+@media (min-width: 990px) {
+    .help-center {
+        display: none;
+    }
+}
+
+/* Hides search bar */
+@media (max-width: 481px) {
+    .search-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 482px) {
+    .help-center {
+        display: none;
+    }
 }
