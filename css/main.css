@@ -75,6 +75,10 @@ body {
     background-color: #d872181f;
 }
 
+.hero-section .btn {
+    width: fit-content;
+}
+
 .display-5 {
     color: #2460B0;
 }
@@ -83,8 +87,8 @@ body {
     font-family: Jockey One, sans-serif;
     font-weight: 400;
     font-size: 1.25em;
-    color: #D87118;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #2460B0;
     border: none;
     border-radius: 15px;
 }
@@ -93,10 +97,30 @@ body {
     font-family: Jockey One, sans-serif;
     font-weight: 400;
     font-size: 1.25em;
+    color: #ffffff;
+    background-color: #2460B0;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-now:hover {
+    font-family: Jockey One, sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
     color: #D87118;
     background-color: #ffffff;
     border: 4px solid #D87118;
-    border-radius: 15px;
+    border-radius: 12px;
+}
+
+.btn-learn:hover {
+    font-family: Jockey One, sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #D87118;
+    background-color: #ffffff;
+    border: 4px solid #D87118;
+    border-radius: 12px;
 }
 
 /* hides need help button when search bar appears */
@@ -120,6 +144,19 @@ body {
     }
 }
 
+/*  */
+@media (max-width: 991px) {
+    .hero-image {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* Width of search bar changes based on screen size */
 @media (min-width: 992px) {
     .search-bar {
         width: 280px;
@@ -137,3 +174,5 @@ body {
         width: 680px;
     }
 }
+
+
