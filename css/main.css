@@ -144,7 +144,7 @@ body {
     }
 }
 
-/*  */
+/* Makes hero content center aligned when in mobile */
 @media (max-width: 991px) {
     .hero-image {
         justify-content: center;
